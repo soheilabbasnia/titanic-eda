@@ -3,7 +3,7 @@ This repository is an eda project with titanic dataset.
 
 On April 15, 1912, the largest passenger liner ever made at the time collided with an iceberg during her maiden voyage. When the Titanic sank, it killed 1,502 out of 2,224 passengers and crew.
 
-The titanic.csv file contains data for 887 real Titanic passengers. Each row represents one person.
+The titanic.csv file contains data for 891 real Titanic passengers. Each row represents one person.
 
 The columns describe different attributes about the person in the ship:
 
