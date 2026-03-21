@@ -11,7 +11,7 @@ The columns describe different attributes about the person in the ship:
 - Survived is the number that survived (1) or died (0)
 - Pclass is the passenger's class (that is, first, second, or third)
 - Name is the passenger's name
-- Sex is the passenger's sex
+- Gender is the passenger's gender
 - Age is the passenger's age
 - Siblings/Spouses Aboard is the number of siblings/spouses aboard the Titanic
 - Parents/Children Aboard is the number of parents/children aboard the Titanic
