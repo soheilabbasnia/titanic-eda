@@ -1,96 +1,117 @@
-# Titanic EDA
-This repository is an eda project with titanic dataset.
+# Titanic Exploratory Data Analysis (EDA)
 
-## Project Overview
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python: 3.x](https://img.shields.io/badge/Python-3.x-3776AB.svg?logo=python&logoColor=white)](https://python.org)
+[![Jupyter](https://img.shields.io/badge/Notebook-Jupyter-F37626.svg?logo=jupyter&logoColor=white)](https://jupyter.org)
+[![Dataset: Kaggle](https://img.shields.io/badge/Dataset-Kaggle%20Titanic-20BEFF.svg?logo=kaggle&logoColor=white)](https://www.kaggle.com/c/titanic)
 
-Welcome to the Titanic Dataset Analysis repository! This project focuses on comprehensive data cleaning and exploratory data analysis (EDA) of the famous Titanic dataset from Kaggle. Through rigorous analysis and visualization techniques, I uncover meaningful patterns and insights about passenger survival factors.\
-On April 15, 1912, the largest passenger liner ever made at the time collided with an iceberg during her maiden voyage. When the Titanic sank, it killed 1,502 out of 2,224 passengers and crew.\
-The titanic.csv file contains data for 891 real Titanic passengers. Each row represents one person.
+English | [فارسی](README_FA.md)
 
-## Author
-- **Github:** [Soheil Abbasnia](https://github.com/docroch)
-- **LinkedIn:** [Soheil Abbasnia](https://www.linkedin.com/in/soheil-abbasnia/)
+A comprehensive data cleaning, statistical investigation, and **Exploratory Data Analysis (EDA)** project on the historic Kaggle Titanic passenger dataset, uncovering socio-demographic factors influencing survival rates during the 1912 maritime disaster.
 
-## File Structure
-```
-Titanic-EDA/
-├── README.md
-├── eda.ipynb
-├── titanic.csv
-```
+---
 
-## File Descriptions
-1. **README.md**: Project documentation and overview
-2. **eda.ipynb**: Jupyter notebook containing the analysis
-3. **titanic.csv**: Complete dataset. The columns describe different attributes about the person in the ship.
-    - PassengerId column is a unique ID of the passenger
-    - Survived is the number that survived (1) or died (0)
-    - Pclass is the passenger's class (that is, first, second, or third)
-    - Name is the passenger's name
-    - Gender is the passenger's gender
-    - Age is the passenger's age
-    - Siblings/Spouses Aboard is the number of siblings/spouses aboard the Titanic
-    - Parents/Children Aboard is the number of parents/children aboard the Titanic
-    - Ticket is the ticket number
-    - Fare is the fare for each ticket
-    - Cabin is the cabin number
-    - Embarked is where the passenger got on the ship (for instance: C refers to Cherbourg, S refers to Southampton, and Q refers to Queenstown)
+## 🌟 Overview
 
-## Key Insights
-- Handle missing values
-- Explored correlations between variables
-- Created comprehensive visualizations
+On April 15, 1912, the RMS Titanic collided with an iceberg during her maiden voyage and sank, resulting in the loss of over 1,500 lives out of 2,224 passengers and crew.
 
-## Knowledge Gained
-- Advanced data preprocessing techniques
-- Statistical analysis methods
-- Data visualization best practices
+This repository provides an in-depth data exploration workflow utilizing **Python**, **Pandas**, **NumPy**, **Matplotlib**, and **Seaborn**. The project emphasizes disciplined data preprocessing, missing data strategies, bivariate correlations, and statistical visualizations to answer fundamental demographic questions surrounding passenger survival.
 
-## Technical Stack
-- **Python Libraries**:
-  - pandas: Data manipulation
-  - numpy: Numerical operations
-  - matplotlib/seaborn: Visualization
-  - scikit-learn: Data preprocessing
-- **Tools**:
-  - Jupyter Notebook
-  - Git/GitHub
+Key highlights:
+- **Systematic Cleaning Pipeline**: Methodical assessment and handling of missing values in `Age`, `Cabin`, and `Embarked`.
+- **Feature Relationships & Correlation**: In-depth analysis of passenger class (`Pclass`), gender (`Sex`), fare distribution, and family presence (`SibSp` + `Parch`).
+- **Visual Storytelling**: High-resolution distribution plots, heatmaps, box plots, and survival proportion charts.
+- **Reproducible Analysis**: Executable Jupyter Notebook (`eda.ipynb`) with step-by-step documentation and commentary.
 
-## Getting Started
+---
+
+## 📊 Dataset Dictionary
+
+The dataset contains records for 891 individual passengers with 12 attributes:
+
+| Column | Description | Key Values / Range |
+| :--- | :--- | :--- |
+| `PassengerId` | Unique sequential identifier for each passenger | 1 to 891 |
+| `Survived` | Survival indicator | `0` = No, `1` = Yes |
+| `Pclass` | Passenger ticket class | `1` = 1st (Upper), `2` = 2nd (Middle), `3` = 3rd (Lower) |
+| `Name` | Full name of the passenger | String |
+| `Sex` | Biological sex | `male`, `female` |
+| `Age` | Age in years (fractional if `<1`) | 0.42 to 80.0 |
+| `SibSp` | Number of siblings or spouses aboard | 0 to 8 |
+| `Parch` | Number of parents or children aboard | 0 to 6 |
+| `Ticket` | Ticket number string | Alphanumeric |
+| `Fare` | Passenger fare paid | \$0.00 to \$512.33 |
+| `Cabin` | Cabin number | Alphanumeric (sparse) |
+| `Embarked` | Port of embarkation | `C` = Cherbourg, `Q` = Queenstown, `S` = Southampton |
+
+---
+
+## 💡 Key Analysis Findings
+
+1. **Gender Disparity ("Women and Children First")**: Female passengers had an overwhelmingly higher survival rate (~74%) compared to male passengers (~19%).
+2. **Socio-Economic Privilege (Class Divide)**: 1st class passengers had a survival rate exceeding 62%, whereas 3rd class passengers had a survival rate below 25%.
+3. **Family Dynamics**: Passengers traveling with small families (1–3 members) exhibited higher survival probabilities than solo travelers or individuals with large families (5+).
+4. **Age Distribution**: Young children had prioritized lifeboat access, while elderly passengers experienced significantly lower survival rates.
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
-- Python 3.x
-- Jupyter Notebook
-- Required Python libraries
 
-### Installation
+- Python 3.8 or higher
+- Jupyter Notebook or JupyterLab
 
-1. Clone the repository:
+### Installation & Execution
+
+1. **Clone the repository**:
    ```bash
-   git clone https://github.com/docRoch/eda-titanic.git
+   git clone https://github.com/soheilabbasnia/titanic-eda.git
+   cd titanic-eda
    ```
 
-2. Install required packages:
+2. **Create and activate a virtual environment**:
    ```bash
-   pip install -r requirements.txt
+   python3 -m venv .venv
+   source .venv/bin/activate
    ```
 
-3. Open the Jupyter Notebook:
+3. **Install dependencies**:
    ```bash
-   jupyter notebook Titanic_Dataset_Analysis.ipynb
+   pip install pandas numpy matplotlib seaborn jupyter
    ```
 
-## Keywords
-- Data Science
-- Data Cleaning
-- Exploratory Data Analysis (EDA)
-- Titanic Dataset
-- Python
-- Statistical Analysis
-- Data Visualization
+4. **Launch the analysis notebook**:
+   ```bash
+   jupyter notebook eda.ipynb
+   ```
 
-## Support
-If you find this project helpful, please give it a star! Feel free to fork it for your own data analysis journey.
+---
 
+## 📁 Project Structure
 
+```text
+titanic-eda/
+├── titanic.csv             # Kaggle Titanic passenger dataset (891 rows)
+├── eda.ipynb               # Full Jupyter Notebook with analysis & plots
+├── LICENSE                 # MIT License
+└── README.md               # English project documentation
+```
 
+---
+
+## 🤝 Contributing
+
+Contributions, feedback, and additional feature engineering analyses are welcome!
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/model-prediction`).
+3. Commit your changes (`git commit -m 'Add logistic regression model'`).
+4. Push to the branch (`git push origin feature/model-prediction`).
+5. Open a Pull Request.
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+Open source for educational, research, and non-commercial purposes.
