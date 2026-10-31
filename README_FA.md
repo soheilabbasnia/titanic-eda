@@ -2,10 +2,10 @@
 
 # تحلیل اکتشافی داده‌های تایتانیک (Titanic EDA)
 
-[![License: MIT](https://img.shields.io/badge/لایسنس-MIT-blue.svg)](LICENSE)
-[![Python: 3.x](https://img.shields.io/badge/پایتون-3.x-3776AB.svg?logo=python&logoColor=white)](https://python.org)
-[![Jupyter](https://img.shields.io/badge/نوت‌بوک-Jupyter-F37626.svg?logo=jupyter&logoColor=white)](https://jupyter.org)
-[![Dataset: Kaggle](https://img.shields.io/badge/دیتاست-Kaggle%20Titanic-20BEFF.svg?logo=kaggle&logoColor=white)](https://www.kaggle.com/c/titanic)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python: 3.x](https://img.shields.io/badge/Python-3.x-3776AB.svg?logo=python&logoColor=white)](https://python.org)
+[![Jupyter](https://img.shields.io/badge/Notebook-Jupyter-F37626.svg?logo=jupyter&logoColor=white)](https://jupyter.org)
+[![Dataset: Kaggle](https://img.shields.io/badge/Dataset-Kaggle%20Titanic-20BEFF.svg?logo=kaggle&logoColor=white)](https://www.kaggle.com/c/titanic)
 
 [English](README.md) | فارسی
 
@@ -105,11 +105,12 @@ titanic-eda/
 ## مشارکت
 
 پیشنهادات، گزارش‌ها و اضافه کردن مدل‌های یادگیری ماشین (مانند رگرسیون لجستیک یا رندوم فارست) بسیار خوشایند است!
-۱. مخزن را فورک کنید.
-۲. یک برنچ جدید بسازید (`git checkout -b feature/model-prediction`).
-۳. تغییرات را کامیت کنید (`git commit -m 'Add ML model evaluation'`).
-۴. تغییرات را به برنچ خود پوش کنید (`git push origin feature/model-prediction`).
-۵. یک پول ریکوئست (Pull Request) ارسال نمایید.
+
+1. مخزن را فورک کنید.<br>
+2. یک شاخه جدید بسازید (`git checkout -b feature/model-evaluation`).<br>
+3. تغییرات خود را کامیت کنید (`git commit -m "Add new feature"`).<br>
+4. تغییرات را به شاخه خود پوش نمایید (`git push origin feature/model-evaluation`).<br>
+5. یک Pull Request باز کنید.
 
 ---
 
