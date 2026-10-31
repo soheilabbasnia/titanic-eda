@@ -11,7 +11,7 @@ A comprehensive data cleaning, statistical investigation, and **Exploratory Data
 
 ---
 
-## 🌟 Overview
+## Overview
 
 On April 15, 1912, the RMS Titanic collided with an iceberg during her maiden voyage and sank, resulting in the loss of over 1,500 lives out of 2,224 passengers and crew.
 
@@ -25,7 +25,7 @@ Key highlights:
 
 ---
 
-## 📊 Dataset Dictionary
+## Dataset Dictionary
 
 The dataset contains records for 891 individual passengers with 12 attributes:
 
@@ -46,7 +46,7 @@ The dataset contains records for 891 individual passengers with 12 attributes:
 
 ---
 
-## 💡 Key Analysis Findings
+## Key Analysis Findings
 
 1. **Gender Disparity ("Women and Children First")**: Female passengers had an overwhelmingly higher survival rate (~74%) compared to male passengers (~19%).
 2. **Socio-Economic Privilege (Class Divide)**: 1st class passengers had a survival rate exceeding 62%, whereas 3rd class passengers had a survival rate below 25%.
@@ -55,7 +55,7 @@ The dataset contains records for 891 individual passengers with 12 attributes:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -88,7 +88,7 @@ The dataset contains records for 891 individual passengers with 12 attributes:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 titanic-eda/
@@ -100,7 +100,7 @@ titanic-eda/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, feedback, and additional feature engineering analyses are welcome!
 1. Fork the repository.
@@ -111,7 +111,8 @@ Contributions, feedback, and additional feature engineering analyses are welcome
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
 Open source for educational, research, and non-commercial purposes.
+
